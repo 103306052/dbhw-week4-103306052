@@ -52,9 +52,11 @@
 
 
 .sk-cube-grid {
-  width: 40px;
-  height: 40px;
-  margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    margin: 100px;
 }
 
 .sk-cube-grid .sk-cube {
@@ -62,6 +64,10 @@
   height: 33%;
   background-color: #333;
   float: left;
+  max-width: 100%;
+  transform: rotate(-45deg) scale(1.42);
+  z-index: -1;
+  position: relative;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
       	animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
 }
