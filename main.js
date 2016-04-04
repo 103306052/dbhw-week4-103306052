@@ -1,5 +1,5 @@
 //var API_PATH = "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=f4a75ba9-7721-4363-884d-c3820b0b917c";
-var API_PATH = "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=6f4e0b9b-8cb1-4b1d-a5c4-febd90f62469";
+var API_PATH = "http://data.kaohsiung.gov.tw/Opendata/DownLoadSrc.aspx?CaseNo1=AV&CaseNo2=2&Lang=C&FolderType=";
 function getData(cb) {
   $.ajax({
     url : API_PATH,
