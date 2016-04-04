@@ -8,29 +8,29 @@
 
 
 .drop-1 {
-  -webkit-animation: fade-in 0.6s linear 0.15s 1;
-      	animation: fade-in 0.6s linear 0.15s 1;
+  -webkit-animation: fade-in 1s linear 0.5s 1;
+      	animation: fade-in 1s linear 0.5s 1;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
 
 .drop-2 {
-  -webkit-animation: fade-in 0.6s linear 0.3s 1;
-      	animation: fade-in 0.6s linear 0.3s 1;
+  -webkit-animation: fade-in 1.5s linear 1.8s 1;
+      	animation: fade-in 1.5s linear 1.8s 1;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
 
 .drop-3 {
-  -webkit-animation: fade-in 0.6s linear 0.45s 1;
-      	animation: fade-in 0.6s linear 0.45s 1;
+  -webkit-animation: fade-in 2s linear 2.1s 1;
+      	animation: fade-in 2s linear 2.1s 1;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
 
 .drop-4 {
-  -webkit-animation: fade-in 0.6s linear 0.6s 1;
-      	animation: fade-in 0.6s linear 0.6s 1;
+  -webkit-animation: fade-in 2.5s linear 2.7s 1;
+      	animation: fade-in 2.5s linear 2.7s 1;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
