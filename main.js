@@ -1,5 +1,5 @@
 //var API_PATH = "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=f4a75ba9-7721-4363-884d-c3820b0b917c";
-var API_PATH = "http://opendata.khcc.gov.tw/public/OD_art_program.ashx?SDate=2016/03/29&EDate=2016/09/29";
+var API_PATH = "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=6f4e0b9b-8cb1-4b1d-a5c4-febd90f62469";
 function getData(cb) {
   $.ajax({
     url : API_PATH,
