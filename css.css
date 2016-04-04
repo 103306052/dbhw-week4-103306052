@@ -64,32 +64,16 @@
   height: 33%;
   background-color: #333;
   float: left;
-  max-width: 100%;
-  transform: rotate(-45deg) scale(1.42);
-  z-index: -1;
-  position: relative;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
       	animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
 }
 .sk-cube-grid .sk-cube1 {
-    max-width: 100%;
-    transform: rotate(-45deg) scale(1.42);
-    z-index: -1;
-    position: relative;
   -webkit-animation-delay: 0.2s;
       	animation-delay: 0.2s; }
 .sk-cube-grid .sk-cube2 {
-    max-width: 100%;
-    transform: rotate(-45deg) scale(1.42);
-    z-index: -1;
-    position: relative;
   -webkit-animation-delay: 0.3s;
       	animation-delay: 0.3s; }
 .sk-cube-grid .sk-cube3 {
-    max-width: 100%;
-    transform: rotate(-45deg) scale(1.42);
-    z-index: -1;
-    position: relative;
   -webkit-animation-delay: 0.4s;
       	animation-delay: 0.4s; }
 .sk-cube-grid .sk-cube4 {
