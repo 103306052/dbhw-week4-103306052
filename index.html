@@ -54,7 +54,7 @@
   	</footer>
 	</div> <!-- /container -->
   </body>
-   <script type="text/javascript">
+  <script type="text/javascript">
 	$(document).ready(function() 
 	{
   		getData(function(err, data) 
@@ -68,7 +68,7 @@
       				var EatList =JSON.parse(data);
       				var HTMEatList = EatList.map(function(eat) 
       				{
-        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:green'>"+eat.Name+"</h2></div></div></div><img class='img-thumbnail' src='"+eat.Picture1+"'width='500' height='236'><p><ul class='list-group'>";
+        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:blue'>"+eat.Name+"</h2></div></div></div><img class='img-circle' src='"+eat.Picture1+"'width='500' height='236'><p><ul class='list-group'>";
         				var items = "";
         				for (var key in eat) 
         				{
