@@ -1,16 +1,6 @@
 <style>
 
-@keyframes TestMove2{
-    from {left:0%;}
-    to {left:80%;}
-}
-@-moz-keyframes TestMove2{
-    from {left:0%;}
-    to {left:80%;}
-}
-@-webkit-keyframes TestMove2{
-    from {left:0%;}
-    to {left:80%;}
+
 
 
 .col-md-4 {
@@ -21,10 +11,11 @@
 
 
 .drop-1 {
-    position:relative;
-    animation:TestMove2 3s infinite alternate; /*IE*/
-    -moz-animation:TestMove2 3s infinite alternate; /*FireFox*/
-    -webkit-animation:TestMove2 3s infinite alternate; /*Chrome, Safari*/
+	-moz-transform:scale(0.8);
+       -webkit-transform:scale(0.8);
+       -o-transform:scale(0.8);
+-ms-transform:scale(0.8);
+transform:scale(0.8);
     -webkit-animation: fade-in 1s linear 0.5s 1;
     animation: fade-in 1s linear 0.5s 1;
     animation-fill-mode: forwards;
