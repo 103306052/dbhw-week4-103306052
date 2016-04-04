@@ -25,18 +25,15 @@
     	</div>
   	</div>
 	</nav>
-
-
 	<!-- Main jumbotron for a primary marketing message or call to action -->
 	<div class="jumbotron">
   	<div class="container">
     	<br>
     	<br>
     	<h1>高雄美食</h1>
-    	<span style="font-family:fantasy;">Eat Eat Eat</span>
+    	<span style="font-family:fantasy;">Delicious Food</span>
   	</div>
 	</div>
-
 	<div class="container">
   	<!-- Example row of columns -->
   	<div id="content" class="row"></div>
@@ -56,31 +53,41 @@
     	<p>&copy; 2016 NCCU MIS - 103306052 黃晨浩</p>
   	</footer>
 	</div> <!-- /container -->
-
   </body>
+  
   <script type="text/javascript">
-	$(document).ready(function() {
-  	getData(function(err, data) {
-    	if(err) {
-      	console.log(err);
-    	} else {
-      	var EatList =JSON.parse(data);
-      	var HTMEatList = EatList.map(function(eat) {
-        	var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:green'>"+eat.Name+"</h2></div></div></div><img class='img-thumbnail' src='"+eat.Picture1+"'width='500' height='236'><p><ul class='list-group'>";
-        	var items = "";
-        	for (var key in eat) {
-          	if(key!="Id" && key!="Picture1" && key!="Px"&& key!="Py"&& key!="Class"&& key!="Changetime") {  items=items+"<li class='list-group-item list-group-item-info'><span class='label label-default label-pill pull-xs-right'>"+key+":"+"</span>"+eat[key]+"</li>";
-          	}
-        	}
-        	var HTMLString = HTMLString+items+"</ul></p><div>";
-        	return HTMLString;
-      	});
-      	HTMEatList.forEach(function(html) {
-        	$(html).appendTo("#content");
-      	});
-      	$('.sk-cube-grid').css('display', 'none');
-    	}
-  	});
+	$(document).ready(function() 
+	{
+  		getData(function(err, data) 
+  		{
+    			if(err) 
+    			{
+      				console.log(err);
+    			} 
+    			else 
+    			{
+      				var List =JSON.parse(data);
+      				var HTMLEatList = List.map(function(eat) 
+      				{
+        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:green'>"+eat.Name+"</h2></div></div></div><img class='img-thumbnail' src='"+eat.Picture1+"'width='500' height='236'><p><ul class='list-group'>";
+        				var items = "";
+        				for (var key in eat) 
+        				{
+          					if(key!="Id" && key!="Picture1" && key!="Px"&& key!="Py"&& key!="Class"&& key!="Changetime") 
+          					{  
+          						items=items+"<li class='list-group-item list-group-item-info'><span class='label label-default label-pill pull-xs-right'>"+key+":"+"</span>"+eat[key]+"</li>";
+          					}
+        				}
+        				var HTMLString = HTMLString+items+"</ul></p><div>";
+        				return HTMLString;
+      				});
+      				HTMLEatList.forEach(function(html) 
+      				{
+        				$(html).appendTo("#content");
+      				});
+      				$('.sk-cube-grid').css('display', 'none');
+    			}
+  		});
 	});
 
   </script>
